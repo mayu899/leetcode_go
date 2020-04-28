@@ -8,10 +8,8 @@ func twoSum(nums []int, target int) []int {
 		val,ok:=twoSumMap[target-num]
 		if ok{
 			return []int{val,i}
-		}else{
-			twoSumMap[num]=i
-			continue
 		}
+		twoSumMap[num]=i
 	}
     return []int{}
 }
